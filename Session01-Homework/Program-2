@@ -1,1 +1,28 @@
 
+using System;
+class divisbleByThree{
+      static void Main(string[] args) {
+      Console.WriteLine("Enter a number");
+
+      string val = Console.ReadLine();
+
+      int N = Convert.ToInt32(val);
+
+      Console.WriteLine("\nNumber which are divisible by three are : ");
+
+      for (int num = 1; num <=N; num++){  
+         
+        int sum = 0;
+        int n = num;
+        while(n>0){
+            int rem =n%10;      
+            sum=sum+rem;      
+            n = n/10;      
+        } 
+
+         if (sum % 3 == 0)
+         Console.Write(num + " ");
+    
+	   }
+     }
+  }
