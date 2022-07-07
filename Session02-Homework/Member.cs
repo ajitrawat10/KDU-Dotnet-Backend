@@ -1,9 +1,10 @@
 using System;
 
-
 namespace SerializeDeserializeXMLData
 {
     [Serializable]
+
+    // Object class
     public class Member
     {
         public string Name { get; set; }
