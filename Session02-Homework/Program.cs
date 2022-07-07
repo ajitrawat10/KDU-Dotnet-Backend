@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
@@ -9,7 +8,7 @@ namespace SerializeDeserializeXMLData
     {
         public static void Main(string[] args)
         {
-            string xmlString =  SerializeObjectToXmlString();
+            string xmlString = SerializeObjectToXmlString();
             Console.WriteLine(xmlString);
 
 
@@ -34,7 +33,7 @@ namespace SerializeDeserializeXMLData
                 var xmlContent = writer.ToString();
                 return xmlContent;
             }
-         }
+        }
 
         //Deserializing Method
         private static void DeserializeXmlStringToObject(string xmlString)
@@ -44,8 +43,6 @@ namespace SerializeDeserializeXMLData
             {
                 var member = (Member)xmlSerializer.Deserialize(reader);
 
-
-                Console.WriteLine(member);
             }
         }
 
