@@ -1,4 +1,4 @@
-﻿using EFCoreScaffolding.Models;
+using EFCoreScaffolding.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -48,19 +48,33 @@ namespace Homework_5
 
 
             // Query - 3
-            var prod = dbContext.Invoices.Select(x => new
+            var product = dbContext.Invoices.Select(x => new
             {
                 productname = x.ProductName,
                 ship_con = x.ShipCountry
             }).ToList();
 
-            foreach(var x in prod)
+            foreach(var x in product)
             {
                 Console.WriteLine(x.productname + " " + x.ship_con);
             }
 
 
             //Query-4
+
+            var dataList = dbContext.OrderDetails
+                          .Select(a => new
+                          {
+                              productName = a.ProductName,
+                              total_quan = a.Quantity,
+                              sales = (double)(a.UnitPrice) * (1 - (a.Discount)) * (a.Quantity)
+
+                          }).ToList();
+            foreach (var x in dataList)
+            {
+                Console.WriteLine(x.productName + " " + x.total_quan + " " + x.sales);
+
+            }
 
 
 
