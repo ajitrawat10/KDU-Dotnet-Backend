@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rEEt2u6AJlHntfejwSELZ1lFk5Dqd561nwmA+BiE5LkwcwtBkxucmP/SJolIlNkKgtZKV7smIeWNliJTM1fiRQ==",
+  "success": true,
+  "projectFilePath": "D:\\KDU\\KDU-Dotnet-Backend\\Assignment-2\\Assignment-2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
